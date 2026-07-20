@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Performance Review Writer — AI Review Generator, Team Calibration & Development Plans</title>
+  <meta name="description" content="Write fair, specific, defensible performance reviews in minutes. AI generator, team calibration chart, and development plan builder. Stop dreading review season. $97 one-time." />
+  <meta name="keywords" content="performance review template, performance review generator, how to write a performance review, employee review template, performance appraisal, development plan template, team calibration, HR performance tools" />
+  <link rel="canonical" href="https://malikreagan.gumroad.com/l/performance-review-writer" />
+
+  <!-- OG -->
+  <meta property="og:title" content="Performance Review Writer — Stop Dreading Review Season" />
+  <meta property="og:description" content="AI review generator, team calibration tool, and development plan builder. Full review cycle for a team of 8 in one Saturday morning." />
+  <meta property="og:type" content="website" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Performance Review Writer",
+    "applicationCategory": "BusinessApplication",
+    "description": "AI-powered performance review generator with team calibration tool and development plan builder for people managers and HR teams.",
+    "offers": { "@type": "Offer", "price": "97.00", "priceCurrency": "USD" },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "44" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do you write a good performance review?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A good performance review should be specific rather than generic, evidence-based rather than impression-based, forward-looking as well as backward-looking, and calibrated fairly against the rest of the team. It should include: a clear overall rating with rationale, specific achievements with examples, key strengths with evidence, development areas framed constructively, measurable goals for the next period, and closing manager comments. The Performance Review Writer generates all of these sections from your bullet-point notes, in a tone you choose, in under 60 seconds."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should a performance review include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A complete performance review should include: an overall rating with justification, a brief executive summary of the period, a detailed achievements section with specific examples, an assessment of key strengths with evidence, development areas framed as growth opportunities rather than criticism, measurable goals for the next review period, and closing manager comments that affirm the employee's value. It should also include a signature block for both manager and employee. The Performance Review Writer generates all of these sections automatically from your notes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is performance review calibration?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Performance review calibration is the process of comparing ratings across a team or organisation to ensure they are consistent, fair, and defensible before reviews are shared with employees. A calibration session typically involves managers reviewing their team ratings together, checking that the distribution is appropriate (not everyone can be exceptional), ensuring that employees at the same level with similar performance receive similar ratings, and identifying any outliers that need to be reviewed. The Team Calibration Tool in the Performance Review Writer makes this process visual — showing distribution charts and ranked lists that make inconsistencies immediately visible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you write a performance improvement plan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A performance improvement plan (PIP) or development plan should include: a clear objective stating what the plan aims to achieve, specific timebound actions (particularly immediate 30-day actions), the skills or behaviours that need to develop, measurable success metrics so progress can be objectively assessed, manager commitments (what support the manager will provide), and a check-in schedule. The Development Plan Builder generates structured plans with all of these elements, calibrated to the specific development areas identified in the performance review."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --deep: #161220;
+      --deep2: #1E1830;
+      --plum: #6B3FA0;
+      --plum2: #7B4FB0;
+      --plum-dim: #6B3FA014;
+      --plum-soft: #6B3FA028;
+      --gold: #C0880A;
+      --gold-dim: #C0880A14;
+      --gold-soft: #C0880A28;
+      --green: #1A7A3A;
+      --green-dim: #1A7A3A14;
+      --ivory: #FDFCFA;
+      --ivory2: #F5F3EE;
+      --ivory3: #EAE7E0;
+      --rule: #DDD8CC;
+      --rule2: #E8E4DA;
+      --ink: #18140C;
+      --ink2: #38342C;
+      --ink3: #68645C;
+      --ink4: #989490;
+      --white: #FFFFFF;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--ivory);
+      color: var(--ink);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 15px; line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 880px; margin: 0 auto; padding: 0 36px; }
+
+    /* NAV */
+    nav {
+      background: var(--deep);
+      border-bottom: 2px solid var(--plum);
+      padding: 0 36px; height: 56px;
+      display: flex; justify-content: space-between; align-items: center;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .nav-logo {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 16px; color: var(--white);
+      text-decoration: none;
+    }
+    .nav-logo em { font-style: italic; color: var(--gold); }
+    .nav-cta {
+      background: var(--plum); color: var(--white);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+      padding: 9px 20px; text-decoration: none;
+      transition: all 0.15s;
+    }
+    .nav-cta:hover { background: var(--plum2); transform: translateY(-1px); }
+
+    /* HERO */
+    .hero {
+      background: var(--deep);
+      padding: 88px 0 72px;
+      border-bottom: 3px solid var(--plum);
+      position: relative; overflow: hidden;
+    }
+    .hero-glow {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 40% 50% at 0% 100%, rgba(107,63,160,0.1) 0%, transparent 60%),
+                  radial-gradient(ellipse 30% 40% at 100% 0%, rgba(192,136,10,0.05) 0%, transparent 50%);
+    }
+    .hero-inner { position: relative; }
+    .hero-kicker {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px; letter-spacing: 5px; text-transform: uppercase;
+      color: var(--ink4); margin-bottom: 20px;
+      display: flex; align-items: center; gap: 12px;
+    }
+    .hero-kicker::before { content: '★'; color: var(--gold); font-size: 14px; }
+    .hero-h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: clamp(38px, 5.5vw, 72px);
+      line-height: 1.05;
+      color: var(--white); margin-bottom: 24px;
+    }
+    .hero-h1 em { font-style: italic; font-weight: 400; color: var(--gold); display: block; }
+    .hero-sub {
+      font-size: 16px; color: var(--ink4);
+      max-width: 540px; line-height: 1.8;
+      margin-bottom: 40px; font-weight: 300;
+    }
+    .hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; margin-bottom: 52px; }
+    .btn-primary {
+      background: var(--plum); color: var(--white);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+      padding: 16px 40px; text-decoration: none;
+      transition: all 0.2s; display: inline-block;
+    }
+    .btn-primary:hover { background: var(--plum2); transform: translateY(-2px); box-shadow: 0 10px 40px rgba(107,63,160,0.3); }
+    .btn-ghost {
+      color: var(--ink4); font-family: 'JetBrains Mono', monospace;
+      font-size: 10px; letter-spacing: 2px; text-decoration: none;
+      border-bottom: 1px solid rgba(152,148,144,0.3); padding-bottom: 2px;
+      text-transform: uppercase; transition: all 0.15s;
+    }
+    .btn-ghost:hover { color: var(--white); }
+
+    /* review preview */
+    .rev-preview { max-width: 560px; background: var(--white); border: 1px solid var(--rule); overflow: hidden; }
+    .rp-head { background: var(--deep2); padding: 14px 18px; }
+    .rp-period { font-family: 'JetBrains Mono', monospace; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--plum2); margin-bottom: 4px; }
+    .rp-name { font-family: 'Libre Baskerville', serif; font-size: 20px; color: var(--white); }
+    .rp-ratings { display: grid; grid-template-columns: repeat(3,1fr); border-bottom: 1px solid var(--rule); }
+    .rp-cell { padding: 10px 14px; border-right: 1px solid var(--rule2); }
+    .rp-cell:last-child { border-right: none; }
+    .rp-cell-label { font-family: 'JetBrains Mono', monospace; font-size: 7px; letter-spacing: 1px; text-transform: uppercase; color: var(--ink4); margin-bottom: 3px; }
+    .rp-stars { color: var(--gold); font-size: 11px; }
+    .rp-body { padding: 14px 18px; }
+    .rp-section-label { font-family: 'JetBrains Mono', monospace; font-size: 7px; letter-spacing: 3px; text-transform: uppercase; color: var(--plum); margin-bottom: 6px; }
+    .rp-line { height: 8px; background: var(--rule2); border-radius: 1px; margin-bottom: 5px; }
+
+    /* SECTIONS */
+    .section { padding: 88px 0; border-top: 1px solid var(--rule); }
+    .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 5px; text-transform: uppercase; color: var(--plum); margin-bottom: 16px; }
+    .section-title { font-family: 'Libre Baskerville', serif; font-size: clamp(30px, 4.5vw, 52px); line-height: 1.05; margin-bottom: 14px; }
+    .section-title em { font-style: italic; font-weight: 400; color: var(--gold); }
+    .section-sub { font-size: 15px; color: var(--ink3); max-width: 540px; line-height: 1.8; font-weight: 300; margin-bottom: 52px; }
+
+    /* PROBLEM */
+    .problem-list { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--rule); margin-top: 48px; }
+    .pl-row { display: grid; grid-template-columns: 56px 1fr; border-bottom: 1px solid var(--rule); }
+    .pl-row:last-child { border-bottom: none; }
+    .pl-icon { display: flex; align-items: center; justify-content: center; background: var(--deep); font-size: 18px; border-right: 1px solid var(--deep2); flex-shrink: 0; padding: 20px 10px; }
+    .pl-body { padding: 18px 22px; background: var(--white); }
+    .pl-title { font-weight: 600; color: var(--ink); font-size: 14px; margin-bottom: 4px; }
+    .pl-desc { font-size: 13px; color: var(--ink3); line-height: 1.7; font-weight: 300; }
+
+    /* TOOLS */
+    .tool-list { display: flex; flex-direction: column; gap: 2px; margin-top: 48px; }
+    .tool-row { display: grid; grid-template-columns: 56px 1fr; background: var(--white); border: 1px solid var(--rule); }
+    .tool-num { display: flex; align-items: center; justify-content: center; background: var(--ivory2); color: var(--plum); font-family: 'Libre Baskerville', serif; font-size: 22px; font-style: italic; border-right: 1px solid var(--rule); }
+    .tool-body { padding: 22px 26px; }
+    .tool-tag { font-family: 'JetBrains Mono', monospace; font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: var(--plum); margin-bottom: 8px; }
+    .tool-name { font-family: 'Libre Baskerville', serif; font-size: 20px; color: var(--deep); margin-bottom: 8px; }
+    .tool-desc { font-size: 13px; color: var(--ink3); line-height: 1.7; margin-bottom: 12px; font-weight: 300; }
+    .tool-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+    .tool-chip { font-family: 'JetBrains Mono', monospace; font-size: 9px; padding: 3px 10px; border: 1px solid var(--rule); color: var(--ink4); text-transform: uppercase; letter-spacing: 1px; }
+
+    /* WORKFLOW */
+    .workflow { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--rule); margin-top: 48px; }
+    .wf-row { display: grid; grid-template-columns: 56px 1fr; border-bottom: 1px solid var(--rule); }
+    .wf-row:last-child { border-bottom: none; }
+    .wf-num { display: flex; align-items: center; justify-content: center; background: var(--deep); color: var(--gold); font-family: 'Libre Baskerville', serif; font-size: 22px; font-style: italic; border-right: 1px solid var(--deep2); flex-shrink: 0; }
+    .wf-body { padding: 20px 24px; background: var(--white); }
+    .wf-title { font-weight: 600; color: var(--ink); font-size: 14px; margin-bottom: 4px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .wf-tool { font-family: 'JetBrains Mono', monospace; font-size: 8px; letter-spacing: 1px; text-transform: uppercase; padding: 2px 8px; background: var(--plum-dim); color: var(--plum); border: 1px solid var(--plum-soft); }
+    .wf-desc { font-size: 13px; color: var(--ink3); line-height: 1.7; font-weight: 300; }
+
+    /* RATINGS PREVIEW */
+    .ratings-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); gap: 8px; margin-top: 48px; }
+    .rat-card { background: var(--white); border: 1px solid var(--rule); padding: 16px 18px; }
+    .rat-name { font-weight: 600; color: var(--ink); font-size: 13px; margin-bottom: 6px; }
+    .rat-stars { color: var(--gold); font-size: 16px; letter-spacing: 2px; margin-bottom: 4px; }
+    .rat-desc { font-size: 11px; color: var(--ink3); line-height: 1.5; font-weight: 300; }
+
+    /* TESTIMONIALS */
+    .test-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px; margin-top: 48px; }
+    .test-card { background: var(--white); border: 1px solid var(--rule); padding: 26px; border-top: 3px solid var(--gold); }
+    .stars { color: var(--gold); font-size: 12px; letter-spacing: 3px; margin-bottom: 12px; }
+    .test-card p { font-family: 'Libre Baskerville', serif; font-size: 14px; font-style: italic; color: var(--ink2); line-height: 1.8; margin-bottom: 14px; }
+    .test-attr { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 2px; color: var(--ink4); text-transform: uppercase; }
+
+    /* PRICING */
+    .pricing-card { max-width: 520px; margin: 48px auto 0; background: var(--white); border: 2px solid var(--deep); overflow: hidden; }
+    .pricing-top { background: var(--deep); padding: 40px 44px; text-align: center; }
+    .pricing-kicker { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: var(--ink4); margin-bottom: 14px; }
+    .price { font-family: 'Libre Baskerville', serif; font-size: 80px; color: var(--white); line-height: 1; letter-spacing: -2px; }
+    .price-sub { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 3px; text-transform: uppercase; color: var(--ink4); margin-top: 6px; }
+    .pricing-body { padding: 36px 44px; }
+    .feature-list { list-style: none; margin-bottom: 32px; }
+    .feature-list li { display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--rule); font-size: 13px; color: var(--ink2); line-height: 1.5; }
+    .feature-list li:last-child { border-bottom: none; }
+    .check { color: var(--plum); flex-shrink: 0; padding-top: 2px; }
+    .btn-purchase { display: block; width: 100%; background: var(--plum); color: var(--white); font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; padding: 18px; text-align: center; text-decoration: none; transition: all 0.15s; }
+    .btn-purchase:hover { background: var(--plum2); transform: translateY(-1px); }
+    .guarantee { text-align: center; margin-top: 14px; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 1px; color: var(--ink4); text-transform: uppercase; }
+
+    /* FAQ */
+    .faq-list { margin-top: 48px; border: 1px solid var(--rule); background: var(--white); }
+    .faq-item { border-bottom: 1px solid var(--rule); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; padding: 22px 28px; cursor: pointer; font-family: 'Libre Baskerville', serif; font-size: 18px; color: var(--deep); line-height: 1.3; background: none; border: none; width: 100%; text-align: left; transition: background 0.15s; }
+    .faq-q:hover { background: var(--ivory2); }
+    .faq-toggle { color: var(--plum); font-size: 22px; font-weight: 300; line-height: 1; flex-shrink: 0; font-family: sans-serif; }
+    .faq-a { display: none; padding: 0 28px 22px; font-size: 14px; color: var(--ink3); line-height: 1.8; font-weight: 300; }
+
+    /* CTA */
+    .cta-section { background: var(--deep); padding: 96px 0; border-top: 3px solid var(--plum); text-align: center; }
+    .cta-section h2 { font-family: 'Libre Baskerville', serif; font-size: clamp(30px, 5vw, 58px); color: var(--white); line-height: 1.05; margin-bottom: 16px; }
+    .cta-section h2 em { font-style: italic; font-weight: 400; color: var(--gold); }
+    .cta-section p { font-size: 15px; color: var(--ink4); margin-bottom: 36px; max-width: 440px; margin-left: auto; margin-right: auto; line-height: 1.8; font-weight: 300; }
+    .cta-note { margin-top: 16px; font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--ink4); letter-spacing: 2px; text-transform: uppercase; }
+
+    /* FOOTER */
+    footer { padding: 28px 36px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; background: var(--ivory2); }
+    .footer-logo { font-family: 'Libre Baskerville', serif; font-size: 14px; color: var(--ink3); }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--ink4); text-decoration: none; letter-spacing: 1px; text-transform: uppercase; }
+    .footer-links a:hover { color: var(--ink); }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+    .hero-inner > * { animation: fadeUp 0.45s ease both; opacity: 0; }
+    .hero-kicker   { animation-delay: 0.05s; }
+    .hero-h1       { animation-delay: 0.1s; }
+    .hero-sub      { animation-delay: 0.18s; }
+    .hero-actions  { animation-delay: 0.24s; }
+    .rev-preview   { animation-delay: 0.3s; }
+
+    @media (max-width: 600px) {
+      .container { padding: 0 20px; }
+      .section { padding: 60px 0; }
+      nav { padding: 0 20px; }
+      .pricing-top, .pricing-body { padding: 28px 24px; }
+      footer { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">Performance Review <em>Writer</em></a>
+  <a href="https://malikreagan.gumroad.com/l/performance-review-writer" class="nav-cta">Get It — $97</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-kicker">HR Intelligence Suite · Performance Management</div>
+      <h1 class="hero-h1">
+        Stop dreading
+        <em>review season.</em>
+      </h1>
+      <p class="hero-sub">
+        AI review generator, team calibration tool, and development plan builder. Full review cycle for a team of 8 — one Saturday morning instead of two full weekends.
+      </p>
+      <div class="hero-actions">
+        <a href="https://malikreagan.gumroad.com/l/performance-review-writer" class="btn-primary">Get the Review Writer — $97</a>
+        <a href="#tools" class="btn-ghost">See all three tools ↓</a>
+      </div>
+      <div class="rev-preview">
+        <div class="rp-head">
+          <div class="rp-period">Annual Review 2025 · Senior Marketing Manager</div>
+          <div class="rp-name">Sarah Chen</div>
+        </div>
+        <div class="rp-ratings">
+          <div class="rp-cell"><div class="rp-cell-label">Quality of Work</div><div class="rp-stars">★★★★★</div></div>
+          <div class="rp-cell"><div class="rp-cell-label">Initiative</div><div class="rp-stars">★★★★☆</div></div>
+          <div class="rp-cell"><div class="rp-cell-label">Collaboration</div><div class="rp-stars">★★★★★</div></div>
+        </div>
+        <div class="rp-body">
+          <div class="rp-section-label">Achievements & Contributions</div>
+          <div class="rp-line" style="width:96%"></div>
+          <div class="rp-line" style="width:88%"></div>
+          <div class="rp-line" style="width:82%"></div>
+          <div class="rp-section-label" style="margin-top:10px">Development Opportunities</div>
+          <div class="rp-line" style="width:90%"></div>
+          <div class="rp-line" style="width:75%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">The honest problem</p>
+    <h2 class="section-title">Review season.<br/><em>Nobody's finest hour.</em></h2>
+    <p class="section-sub">Every manager knows what a good performance review looks like. Almost nobody writes them under time pressure with 8 direct reports and a two-week deadline.</p>
+    <div class="problem-list">
+      <div class="pl-row">
+        <div class="pl-icon">✍</div>
+        <div class="pl-body">
+          <div class="pl-title">The same phrases, eight times</div>
+          <div class="pl-desc">"Strong team player." "Great communicator." "Continues to develop." You know they're not specific enough. You submit them anyway because you have seven more to write.</div>
+        </div>
+      </div>
+      <div class="pl-row">
+        <div class="pl-icon">⚖</div>
+        <div class="pl-body">
+          <div class="pl-title">Calibration happens in your head</div>
+          <div class="pl-desc">Two people both got "Exceeds Expectations." You can't quite articulate what distinguishes them. It gets spotted in the moderation meeting. You look inconsistent.</div>
+        </div>
+      </div>
+      <div class="pl-row">
+        <div class="pl-icon">📋</div>
+        <div class="pl-body">
+          <div class="pl-title">Development plans that go nowhere</div>
+          <div class="pl-desc">"Attend a leadership course." "Take on more strategic projects." Written in 10 minutes at the end of the review. Filed. Never looked at again until next review season.</div>
+        </div>
+      </div>
+      <div class="pl-row" style="border-bottom:none">
+        <div class="pl-icon">⏰</div>
+        <div class="pl-body" style="background:#FFF8F4">
+          <div class="pl-title" style="color:#8B3010">Two weekends. Every cycle.</div>
+          <div class="pl-desc" style="color:#6C5048">Not because the reviews are hard. Because writing 8 specific, differentiated, well-structured reviews from scratch takes longer than anyone admits out loud.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="section" id="tools">
+  <div class="container">
+    <p class="eyebrow">What's inside</p>
+    <h2 class="section-title">Three tools.<br/><em>The complete review cycle.</em></h2>
+    <p class="section-sub">Calibrate first. Write the reviews. Build the development plans. Everything in one tool, in the right order.</p>
+    <div class="tool-list">
+      <div class="tool-row">
+        <div class="tool-num">I</div>
+        <div class="tool-body">
+          <div class="tool-tag">AI Writing</div>
+          <div class="tool-name">Performance Review Writer</div>
+          <div class="tool-desc">Enter bullet-point notes and get a complete, specific, professional performance review in under 60 seconds. Six-dimension star ratings, four tone options, sensitive context field. Generated review includes executive summary, achievements (3 paragraphs with specific examples), key strengths with evidence, development opportunities, 3–4 goals for next period, and manager comments. Signature block included.</div>
+          <div class="tool-chips">
+            <span class="tool-chip">6-dimension ratings</span>
+            <span class="tool-chip">4 tone options</span>
+            <span class="tool-chip">Signature block</span>
+            <span class="tool-chip">PDF export</span>
+            <span class="tool-chip">→ Dev plan</span>
+          </div>
+        </div>
+      </div>
+      <div class="tool-row">
+        <div class="tool-num">II</div>
+        <div class="tool-body">
+          <div class="tool-tag">Fairness Check</div>
+          <div class="tool-name">Team Calibration Tool</div>
+          <div class="tool-desc">Enter your team before reviews go out. See the distribution chart — headcount per rating band with colour-coded bars. See the ranked list — all team members sorted by score. Catch inconsistencies before they reach HR. Answer the question: if two people both got "Exceeds Expectations," can you articulate what distinguishes them?</div>
+          <div class="tool-chips">
+            <span class="tool-chip">Distribution chart</span>
+            <span class="tool-chip">Ranked list</span>
+            <span class="tool-chip">Live updates</span>
+            <span class="tool-chip">Any team size</span>
+          </div>
+        </div>
+      </div>
+      <div class="tool-row">
+        <div class="tool-num">III</div>
+        <div class="tool-body">
+          <div class="tool-tag">Forward Planning</div>
+          <div class="tool-name">Development Plan Builder</div>
+          <div class="tool-desc">Turn review outcomes into structured development plans with specific actions, timelines, and success metrics. Timeframes from 3 to 18 months. Five focus types including promotion readiness and performance improvement. Auto-populates from the Review Writer with one click. Each plan includes immediate 30-day actions, skill development steps, stretch opportunities, success metrics, manager commitments, and check-in schedule.</div>
+          <div class="tool-chips">
+            <span class="tool-chip">3–18 month plans</span>
+            <span class="tool-chip">5 focus types</span>
+            <span class="tool-chip">Success metrics</span>
+            <span class="tool-chip">Manager commitments</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKFLOW -->
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">The review cycle</p>
+    <h2 class="section-title">Three steps.<br/><em>One Saturday morning.</em></h2>
+    <p class="section-sub">The complete review cycle in the right order — calibration before writing, development plans after.</p>
+    <div class="workflow">
+      <div class="wf-row">
+        <div class="wf-num">1</div>
+        <div class="wf-body">
+          <div class="wf-title">Calibrate the team <span class="wf-tool">Team Calibration Tool</span></div>
+          <div class="wf-desc">Enter all team members with provisional ratings. Check the distribution chart. Adjust any ratings that look inconsistent before writing begins. 20 minutes — saves the moderation meeting conversation.</div>
+        </div>
+      </div>
+      <div class="wf-row">
+        <div class="wf-num">2</div>
+        <div class="wf-body">
+          <div class="wf-title">Write each review <span class="wf-tool">Review Writer</span></div>
+          <div class="wf-desc">Work through each team member. Enter your bullet-point notes — achievements, development areas, specific examples. Rate the six dimensions. Generate. Review and adjust. Export to PDF. 15–20 minutes per person for a review you'd be proud to sign.</div>
+        </div>
+      </div>
+      <div class="wf-row" style="border-bottom:none">
+        <div class="wf-num">3</div>
+        <div class="wf-body">
+          <div class="wf-title">Build the development plans <span class="wf-tool">Development Plan Builder</span></div>
+          <div class="wf-desc">Click "Build Dev Plan" from each completed review. The employee details and development areas carry across automatically. Generate a specific, structured plan. Share in the review conversation. 10 minutes per person for a plan that actually gets followed.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RATINGS DIMENSIONS -->
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Six rating dimensions</p>
+    <h2 class="section-title">Rate what<br/><em>actually matters.</em></h2>
+    <p class="section-sub">Six dimensions beyond the single overall rating — giving a nuanced, multidimensional picture of performance that holds up to scrutiny.</p>
+    <div class="ratings-grid">
+      <div class="rat-card"><div class="rat-name">Quality of Work</div><div class="rat-stars">★★★★★</div><div class="rat-desc">Accuracy, thoroughness, and standard of output</div></div>
+      <div class="rat-card"><div class="rat-name">Productivity & Output</div><div class="rat-stars">★★★★☆</div><div class="rat-desc">Volume of work, meeting deadlines, efficient use of time</div></div>
+      <div class="rat-card"><div class="rat-name">Initiative & Drive</div><div class="rat-stars">★★★★★</div><div class="rat-desc">Proactivity, ownership, self-motivation</div></div>
+      <div class="rat-card"><div class="rat-name">Collaboration</div><div class="rat-stars">★★★☆☆</div><div class="rat-desc">Cross-team work, relationship quality, conflict management</div></div>
+      <div class="rat-card"><div class="rat-name">Communication</div><div class="rat-stars">★★★★☆</div><div class="rat-desc">Clarity, listening, adapting message to audience</div></div>
+      <div class="rat-card"><div class="rat-name">Learning & Growth</div><div class="rat-stars">★★★★★</div><div class="rat-desc">Skill development, receptiveness to feedback, curiosity</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">What people say</p>
+    <h2 class="section-title">Better reviews.<br/><em>Less time.</em></h2>
+    <div class="test-grid">
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p>"I manage a team of 11. Review season used to take me two full weekends. This year it took one Saturday morning. Every review was better than anything I'd written manually — more specific, better structured, and actually different from each other."</p>
+        <p class="test-attr">Engineering Manager · Series B startup</p>
+      </div>
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p>"The calibration tool is the feature nobody else has thought to build. I could see immediately that I'd given three people the same rating who clearly weren't performing at the same level. Fixed it before the reviews went out."</p>
+        <p class="test-attr">People Operations Lead · 80-person company</p>
+      </div>
+      <div class="test-card">
+        <div class="stars">★★★★★</div>
+        <p>"The development plans are the part I'm most impressed by. I used to write 'attend a leadership course' and consider it done. The plans this generates are specific enough to actually follow — 30-day actions, success metrics, things I commit to doing."</p>
+        <p class="test-attr">Director of Product · SaaS company</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section" id="pricing">
+  <div class="container">
+    <p class="eyebrow" style="text-align:center">Pricing</p>
+    <h2 class="section-title" style="text-align:center">Three tools.<br/><em>One price.</em></h2>
+    <div class="pricing-card">
+      <div class="pricing-top">
+        <div class="pricing-kicker">Performance Review Writer</div>
+        <div class="price">$97</div>
+        <div class="price-sub">One-time · No subscription · Instant download</div>
+      </div>
+      <div class="pricing-body">
+        <ul class="feature-list">
+          <li><span class="check">✦</span>AI review generator — 6-dimension ratings, specific achievements, strengths, development, goals, signature block</li>
+          <li><span class="check">✦</span>Team calibration tool — distribution chart, ranked list, live updates</li>
+          <li><span class="check">✦</span>Development plan builder — structured plan, success metrics, manager commitments</li>
+          <li><span class="check">✦</span>One-click carry from review to development plan</li>
+          <li><span class="check">✦</span>Copy or export to PDF — one click</li>
+          <li><span class="check">✦</span>Works in any browser — no install, no login</li>
+          <li><span class="check">✦</span>Lifetime access — yours forever</li>
+        </ul>
+        <a href="https://malikreagan.gumroad.com/l/performance-review-writer" class="btn-purchase">
+          Get the Performance Review Writer — $97
+        </a>
+        <p class="guarantee">7-day money-back guarantee · No questions asked</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">FAQ</p>
+    <h2 class="section-title" style="margin-bottom:0">Questions.</h2>
+    <div class="faq-list" id="faqList"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Review season.<br/><em>Under control.</em></h2>
+    <p>Three tools. Write fair, specific, defensible reviews. Calibrate consistently. Build development plans that get followed.</p>
+    <a href="https://malikreagan.gumroad.com/l/performance-review-writer" class="btn-primary">Get the Performance Review Writer — $97</a>
+    <p class="cta-note">One-time · 7-day guarantee · Instant download</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">★ Performance Review Writer</div>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Refund Policy</a>
+    <a href="mailto:hello@malikreagan.com">Contact</a>
+  </div>
+</footer>
+
+<script>
+const FAQS = [
+  { q:"How do you write a good performance review?", a:"A good performance review should be specific rather than generic, evidence-based rather than impression-based, and forward-looking as well as backward-looking. It should include: a clear overall rating with rationale, specific achievements with examples, key strengths with evidence, development areas framed constructively, measurable goals for the next period, and closing manager comments. The Performance Review Writer generates all of these sections from your bullet-point notes in under 60 seconds." },
+  { q:"What should a performance review include?", a:"A complete performance review should include: an overall rating with justification, an executive summary of the period, a detailed achievements section with specific examples, an assessment of key strengths with evidence, development areas framed as growth opportunities, measurable goals for the next review period, and closing manager comments that affirm the employee's value. A signature block for both manager and employee should also be included. The Review Writer generates all of these sections automatically." },
+  { q:"What is performance review calibration?", a:"Performance calibration is the process of comparing ratings across a team to ensure they are consistent, fair, and defensible before reviews are shared. It involves checking that the distribution is appropriate, ensuring employees at similar levels with similar performance receive similar ratings, and identifying outliers. The Team Calibration Tool makes this visual — showing distribution charts and ranked lists that make inconsistencies immediately visible before reviews go out." },
+  { q:"How do you write a development plan after a performance review?", a:"A good development plan should include: a clear objective, specific timebound actions (particularly immediate 30-day actions), measurable success metrics, manager commitments (what support will be provided), and a check-in schedule. The Development Plan Builder generates structured plans with all of these elements, calibrated to the specific development areas identified in the review. It auto-populates from the Review Writer with one click." },
+  { q:"Can I use this for different types of reviews?", a:"Yes. The tool covers annual reviews (2024, 2025), mid-year reviews (H1 and H2), quarterly reviews (Q1–Q4), and probation reviews (3-month and 6-month). The tone options (balanced, encouraging, direct, formal) and overall performance levels (Exceptional through Below Expectations) work across all review types. The development plan timeframes range from 3 to 18 months." },
+  { q:"What format is the tool?", a:"A single HTML file that opens in any browser — no install, no login, no internet connection required except for the AI generation features. Copy reviews with one click or export to PDF using your browser's print function. Works on Mac, Windows, iPad, and any modern browser." }
+];
+
+const faqList = document.getElementById('faqList');
+FAQS.forEach((f, i) => {
+  const div = document.createElement('div');
+  div.className = 'faq-item';
+  div.innerHTML = `<button class="faq-q" onclick="toggleFaq(${i})">${f.q}<span class="faq-toggle" id="ftog${i}">+</span></button><div class="faq-a" id="fans${i}">${f.a}</div>`;
+  faqList.appendChild(div);
+});
+
+function toggleFaq(i) {
+  const ans = document.getElementById('fans'+i);
+  const tog = document.getElementById('ftog'+i);
+  const open = ans.style.display === 'block';
+  document.querySelectorAll('.faq-a').forEach(a => a.style.display='none');
+  document.querySelectorAll('.faq-toggle').forEach(t => t.textContent='+');
+  if (!open) { ans.style.display='block'; tog.textContent='−'; }
+}
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; }
+  });
+}, { threshold: 0.07 });
+document.querySelectorAll('.section').forEach(s => {
+  s.style.opacity='0'; s.style.transform='translateY(18px)';
+  s.style.transition='opacity 0.5s ease, transform 0.5s ease';
+  obs.observe(s);
+});
+</script>
+</body>
+</html>
